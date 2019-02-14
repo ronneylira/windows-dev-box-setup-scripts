@@ -1,5 +1,5 @@
 # Description: Boxstarter Script
-# Author: Microsoft
+# Author: Microsoft + Massimiliano Donini
 # Common settings for web dev
 
 Disable-UAC
@@ -26,17 +26,26 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "SystemConfiguration.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "RemoveDefaultApps.ps1";
-executeScript "HyperV.ps1";
-executeScript "Docker.ps1";
 executeScript "WSL.ps1";
 executeScript "Browsers.ps1";
+executeScript "Tools.ps1";
 
-#--- Tools ---
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension msjsdiag.debugger-for-edge
+Update-SessionEnvironment
 
-#--- Microsoft WebDriver ---
-choco install -y microsoftwebdriver
+choco install -y visualstudio2017professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
+Update-SessionEnvironment #refreshing env due to Git install
+
+choco install -y visualstudio2017-workload-azure
+choco install -y visualstudio2017-workload-universal
+choco install -y visualstudio2017-workload-manageddesktop
+choco install -y visualstudio2017-workload-netcoretools
+choco install -y visualstudio2017-workload-netweb
+
+#--- Create code folder
+mkdir C:\Code
+
+#--- Install Azure DevOps CLI
+az extension add --name azure-devops
 
 Enable-UAC
 Enable-MicrosoftUpdate
