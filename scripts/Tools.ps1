@@ -1,5 +1,5 @@
 choco install -y microsoftazurestorageexplorer
-choco install -y sql-server-management-studio --version 14.0.17285.0
+choco install -y sql-server-management-studio
 choco install -y ilspy
 choco install -y microsoft-teams
 choco install -y office365business
