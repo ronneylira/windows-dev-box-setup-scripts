@@ -35,11 +35,11 @@ Update-SessionEnvironment
 choco install -y visualstudio2017professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 Update-SessionEnvironment #refreshing env due to Git install
 
-choco install -y visualstudio2017-workload-azure
-choco install -y visualstudio2017-workload-universal
-choco install -y visualstudio2017-workload-manageddesktop
-choco install -y visualstudio2017-workload-netcoretools
-choco install -y visualstudio2017-workload-netweb
+choco install -y visualstudio2019-workload-azure
+choco install -y visualstudio2019-workload-universal
+choco install -y visualstudio2019-workload-manageddesktop
+choco install -y visualstudio2019-workload-netcoretools
+choco install -y visualstudio2019-workload-netweb
 
 #--- Create code folder
 mkdir C:\Code
