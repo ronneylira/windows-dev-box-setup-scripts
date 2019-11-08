@@ -10,6 +10,7 @@ choco install -y nodejs-lts
 choco install -y dotnetcore-sdk
 choco install -y linqpad
 choco install -y microsoft-windows-terminal
+choco install -y azure-data-studio
 
 # Install the azure CLI
 choco install -y azure-cli
