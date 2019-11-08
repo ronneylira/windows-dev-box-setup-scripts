@@ -8,6 +8,8 @@ choco install -y fiddler
 choco install -y git.install
 choco install -y nodejs-lts
 choco install -y dotnetcore-sdk
+choco install -y linqpad
+choco install -y microsoft-windows-terminal
 
 # Install the azure CLI
 choco install -y azure-cli
