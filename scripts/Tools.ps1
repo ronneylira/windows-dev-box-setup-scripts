@@ -15,6 +15,7 @@ choco install -y filezilla
 choco install -y notepadplusplus
 choco install -y microsoftazurestorageexplorer
 choco install -y postman
+choco install -y paint.net
 
 # Install the azure CLI
 choco install -y azure-cli
