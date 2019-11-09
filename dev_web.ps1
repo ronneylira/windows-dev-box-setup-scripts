@@ -32,7 +32,7 @@ executeScript "Tools.ps1";
 
 Update-SessionEnvironment
 
-choco install -y visualstudio2017professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
+choco install -y visualstudio2019professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 Update-SessionEnvironment #refreshing env due to Git install
 
 choco install -y visualstudio2019-workload-azure
