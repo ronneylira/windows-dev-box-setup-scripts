@@ -12,8 +12,6 @@ choco install -y linqpad
 choco install -y microsoft-windows-terminal
 choco install -y azure-data-studio
 choco install -y filezilla
-choco install -y notepadplusplus
-choco install -y microsoftazurestorageexplorer
 choco install -y postman
 choco install -y paint.net
 
