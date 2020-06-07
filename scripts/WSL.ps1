@@ -1,4 +1,4 @@
-choco install -y wsl --source="'windowsfeatures'"
+choco install -y wsl
 
 #--- Ubuntu ---
 # TODO: Move this to choco install once --root is included in that package
